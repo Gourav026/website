@@ -33,7 +33,7 @@ class Movie extends Component {
      this.setState({searchGenre:e.target.value,searchTitle:'',searchRating:''})
   }
      handleRatingInput = (e)=> {
-     console.log('rating--->',e.target.value);
+     //console.log('rating--->',e.target.value);
       this.setState({searchRating:e.target.value,searchTitle:'',searchGenre:''})
   }
  

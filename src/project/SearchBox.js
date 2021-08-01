@@ -17,9 +17,11 @@ function SearchBox(props) {
               <option value="Thriller">Thriller</option>
               <option value="Drama">Drama</option>
             </select>
+           
             <select  onChange={props.handleRatingInput}>
             
-            {props.handleTitleValueInput ? (<option selected value="">Select Rating</option>):(<option value="">Select Rating</option>)}
+           
+            {(props.handleTitleValueInput || props.handleGenerValueInput) ? (<option selected value="">Select rating</option>):(<option value="">Select rating</option>)}
 
                    {/*   <option value="0" selected="">Select Rating</option> */}
                       <option value="1">*</option>
